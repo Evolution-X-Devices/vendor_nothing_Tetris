@@ -333,3 +333,9 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+
+java_import {
+    name: "mediatek-common",
+    jars: ["proprietary/system_ext/framework/mediatek-common.jar"],
+    installable: true,
+}
