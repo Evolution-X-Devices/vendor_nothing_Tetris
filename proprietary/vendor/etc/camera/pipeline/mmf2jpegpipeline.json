@@ -117,7 +117,8 @@
       "StreamConfigModeNormalPhoto",
       "StreamConfigModeNormal",
       "StreamConfigModeQCFAMFNR",
-      "StreamConfigModeBokeh"
+      "StreamConfigModeBokeh",
+      "StreamConfigModeExpert"
     ],
     "SceneModeMask": [
       "MMF_MODE"

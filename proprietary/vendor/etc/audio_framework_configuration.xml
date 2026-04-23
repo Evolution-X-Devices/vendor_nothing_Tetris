@@ -7,4 +7,7 @@
     <scenario scenarioName="RecordScreenOff_Irq">
         <package packageName="com.duowan.mobile"/>
     </scenario>
+    <scenario scenarioName="BMS_lowlatency">
+        <package packageName="com.tencent.tmgp.sgame"/>
+    </scenario>
 </WHITELIST>

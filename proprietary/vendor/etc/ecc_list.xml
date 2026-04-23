@@ -25,6 +25,9 @@
                 Use FFF or FF for all operators under same country
                 Ex: 460 FFF means all operators in China
     -->
+    <!--BEE-1544 lihui add for GCF test begin -->
+    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="001 01"/>
+    <!--BEE-1544 lihui add for GCF test end -->
 
     <!-- Add for France operator -->
     <EccEntry Ecc="114" Category="0" Condition="2" Plmn="208 FFF"/>
@@ -183,5 +186,22 @@
     <EccEntry Ecc="166" Category="0" Condition="0" Plmn="202 FFF"/>
     <EccEntry Ecc="199" Category="0" Condition="0" Plmn="202 FFF"/>
     <!-- BEE-4334, add 100/166/199 for ecc number in Greece End-->
+
+    <!-- BULB-4255 wangke Add for Saudi Arabia begin -->
+    <EccEntry Ecc="996" Category="0" Condition="2" Plmn="420 03"/>
+    <!-- BULB-4255 wangke Add for Saudi Arabia end -->
+
+    <!-- AERO15V-3248, add for SaudiArabia Zain begin-->
+    <EccEntry Ecc="994" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="996" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="997" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="998" Category="0" Condition="2" Plmn = "420 04" />
+    <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 04" />
+    <!-- AERO15V-3248, add for SaudiArabia Zain End-->
+
+    <!-- BULB-7638, add for Egypt ECC begin-->
+    <EccEntry Ecc="123" Category="2" Condition="2" Plmn="602 FFF"/>
+    <EccEntry Ecc="180" Category="4" Condition="2" Plmn="602 FFF"/>
+    <!-- BULB-7638, add for Egypt ECC end-->
 
 </EccTable>

@@ -6,10 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nothing/Tetris
 
 PRODUCT_COPY_FILES += \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/libjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg.so \
     vendor/nothing/Tetris/proprietary/system_ext/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/kpoc_charger \
     vendor/nothing/Tetris/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/nothing/Tetris/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/nothing/Tetris/proprietary/system_ext/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/kpoc_charger.rc \
+    vendor/nothing/Tetris/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/nothing/Tetris/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/nothing/Tetris/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
     vendor/nothing/Tetris/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
@@ -206,14 +208,12 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service.trustonic \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
-    vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek.mt6878:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek.mt6878 \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.graphics.composer@3.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@3.2-service \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.lights-service.mediatek \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-shim-service-mtk \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint@3.0-service.trustonic \
-    vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.thermal-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal-service.mediatek \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0 \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/android.hardware.usb.gadget-aidl-service.mediatekv1.0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb.gadget-aidl-service.mediatekv1.0 \
@@ -230,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram-service \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq_aidl-service \
+    vendor/nothing/Tetris/proprietary/vendor/bin/hw/vendor.noth.hardware.sensor.sensor_extension-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.noth.hardware.sensor.sensor_extension-service \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/nothing/Tetris/proprietary/vendor/bin/hw/vtservice_aidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_aidl \
     vendor/nothing/Tetris/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
@@ -237,7 +238,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/nothing/Tetris/proprietary/vendor/bin/mtk_lbs_service:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_lbs_service \
     vendor/nothing/Tetris/proprietary/vendor/bin/muxreport:$(TARGET_COPY_OUT_VENDOR)/bin/muxreport \
-    vendor/nothing/Tetris/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
     vendor/nothing/Tetris/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
     vendor/nothing/Tetris/proprietary/vendor/bin/rcs_volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/rcs_volte_stack \
     vendor/nothing/Tetris/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
@@ -382,7 +382,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/CFR_para4_Nothing_UW_v101-5_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_UW_v101-5_AI.bin \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/M_Rater_Defect_v1.0.14_arm64_ppl3.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Rater_Defect_v1.0.14_arm64_ppl3.model \
-    vendor/nothing/Tetris/proprietary/vendor/etc/camera/Ndot-55.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Ndot-55.otf \
+    vendor/nothing/Tetris/proprietary/vendor/etc/camera/Ndot-57.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Ndot-57.otf \
+    vendor/nothing/Tetris/proprietary/vendor/etc/camera/Ndotfont/Ndot-55.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Ndotfont/Ndot-55.otf \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/bokeh_caldata_uw_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_uw_golden.bin \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/default_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/default_params.xml \
     vendor/nothing/Tetris/proprietary/vendor/etc/camera/facesr.sensetime.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facesr.sensetime.model \
@@ -479,13 +480,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
-    vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.2-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
-    vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
@@ -493,6 +492,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/hw/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/hw/init_conninfra.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init_conninfra.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -500,6 +500,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
@@ -508,7 +509,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/nothing/Tetris/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/thermal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermal-mediatek.rc \
@@ -518,9 +518,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.fingerprint.goodix.config.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.fingerprint.goodix.config.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/nothing/Tetris/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/nothing/Tetris/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/nothing/Tetris/proprietary/vendor/etc/md/apncfg/202_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_01.conf \
     vendor/nothing/Tetris/proprietary/vendor/etc/md/apncfg/202_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_02.conf \
     vendor/nothing/Tetris/proprietary/vendor/etc/md/apncfg/202_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/md/apncfg/202_05.conf \
@@ -1314,6 +1316,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/etc/thermal/thermal_policy_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_12.conf \
     vendor/nothing/Tetris/proprietary/vendor/etc/thermal/thermal_policy_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_13.conf \
     vendor/nothing/Tetris/proprietary/vendor/etc/thermal/thermal_policy_14.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_14.conf \
+    vendor/nothing/Tetris/proprietary/vendor/etc/thermal/thermal_policy_15.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_15.conf \
     vendor/nothing/Tetris/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/nothing/Tetris/proprietary/vendor/firmware/FT3519T_Conf_MultipleTest_V02.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/FT3519T_Conf_MultipleTest_V02.ini \
     vendor/nothing/Tetris/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
@@ -1350,13 +1353,10 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/nothing/Tetris/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
     vendor/nothing/Tetris/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/nothing/Tetris/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/nothing/Tetris/proprietary/vendor/lib64/APUWareApusysAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysAidlServer.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/APUWareUtilsAidlServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsAidlServer.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/android.hardware.biometrics.common-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.common-V3-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/arm.graphics-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V4-ndk.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/arm.mali.platform-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.mali.platform-V2-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.b2y.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.b2y.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.beauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.beauty.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.bokehcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.bokehcapture.so \
@@ -1380,7 +1380,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.watermark.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.y2y.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.y2y.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/camera/node/com.nothing.node.yuvsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/node/com.nothing.node.yuvsr.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
@@ -1391,15 +1390,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3c2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3c2_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3c_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3c_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3c_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3c_mipi_raw_tuning.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3ctxd2_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3ctxd2_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3ctxd_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3ctxd_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/gc16b3ctxd_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc16b3ctxd_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/audio.primary.mt6878.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6878.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mediatek.so \
@@ -1407,7 +1402,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/mapper.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mapper.mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/mt6878/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6878/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/mt6878/android.hardware.graphics.allocator-V2-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6878/android.hardware.graphics.allocator-V2-mediatek.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/mt6878/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6878/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
@@ -1422,6 +1416,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/sensors.mt6878.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6878.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
@@ -1437,7 +1432,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mali.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/imx882_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx882_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/imx882_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx882_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/imx882txd_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx882txd_mipi_raw_IdxMgr.so \
@@ -1550,9 +1544,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libarcsoft_superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_superportrait.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libarcsoft_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_watermark.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libarm_egl_properties_sysprop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_egl_properties_sysprop.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libarm_gralloc_properties_sysprop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_gralloc_properties_sysprop.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libarm_mali_config_sysprops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarm_mali_config_sysprops.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_core.so \
@@ -1748,6 +1739,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libgwsdv3-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgwsdv3-ril.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/libhdr10plusvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10plusvideo.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
@@ -1788,8 +1780,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libjni_rater_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_rater_api.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libjpegdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegdecoder.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libjpegencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
@@ -1803,7 +1793,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmprofile.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnl.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libmorpho_MotionSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_MotionSensor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmorpho_RapidEffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_RapidEffect.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmorpho_RawDeepDenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_RawDeepDenoise.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_video_stabilizer.so \
@@ -2026,6 +2015,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntcamcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntcamcommonutils.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntcamimage_io.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntcamimage_io.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntcamskia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntcamskia.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/libntcamultrahdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntcamultrahdr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntcamyuv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntcamyuv.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntf.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libntofflinepostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libntofflinepostproc.so \
@@ -2057,6 +2047,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libruy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libruy.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscltm.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/libsensor_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_extension.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libsilkybrightnesscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsilkybrightnesscore.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimlock.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimmelock.so \
@@ -2075,7 +2066,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libttm_nightsight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libttm_nightsight.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libttm_nightsight_ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libttm_nightsight_ae.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libultrahdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrahdr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/libultrahdr_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrahdr_mtk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvainr_model.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodec_oal.so \
@@ -2101,7 +2092,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu5.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libwa_opticalzoomfactor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_opticalzoomfactor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/libwifi-hal-mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-mtk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libwifical.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifical.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libwifinvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifinvram.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/libwifinvramdata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifinvramdata.so \
@@ -2111,10 +2101,20 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/arm.graphics-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/arm.graphics-V4-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/arm.mali.platform-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/arm.mali.platform-V2-ndk.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc02m1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc02m1_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc02m1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc02m1_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc08a8syx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc08a8syx_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc08a8syx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc08a8syx_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc08a8xl_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc08a8xl_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc08a8xl_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc08a8xl_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3c_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3c_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3c_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3c_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3cofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3cofilm_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3cofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3cofilm_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3ctxd_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3ctxd_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3ctxd_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3ctxd_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3cxl_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3cxl_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/gc16b3cxl_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/gc16b3cxl_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/imx882_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/imx882_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/imx882_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/imx882_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/imx882txd_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/imx882txd_mipi_raw_IdxMgr.so \
@@ -2327,7 +2327,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmml.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmmlpqImpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmmlpqImpl.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmnl.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmorpho_MotionSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmorpho_MotionSensor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmorpho_RawDeepDenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmorpho_RawDeepDenoise.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmorpho_video_stabilizer.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libmtk_drvb.so \
@@ -2477,6 +2476,10 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/libwa_opticalzoomfactor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/libwa_opticalzoomfactor.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/mtk000_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/mtk000_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/mtk000_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/mtk000_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/ov50d40ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/ov50d40ofilm_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/ov50d40ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/ov50d40ofilm_mipi_raw_tuning.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/s5kgn9spofxian_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/s5kgn9spofxian_mipi_raw_IdxMgr.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/s5kgn9spofxian_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/s5kgn9spofxian_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/sc202cs_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/sc202cs_mipi_raw_IdxMgr.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/sc202cs_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/sc202cs_mipi_raw_tuning.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/mt6878/sc202cssj_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6878/sc202cssj_mipi_raw_IdxMgr.so \
@@ -2494,6 +2497,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/soundfx/libdiraceffect_NT.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdiraceffect_NT.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/soundfx/libspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libspatializer.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.aac.hardware.richtap.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.aac.hardware.richtap.vibrator-V2-ndk.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.hardware.light-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.hardware.light-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor@2.0.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so \
@@ -2537,7 +2541,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.3.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.4.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.5.so \
-    vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtklight-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so \
@@ -2570,6 +2573,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.rcs@2.0.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
+    vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.noth.hardware.sensor.sensor_extension-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.noth.hardware.sensor.sensor_extension-V1-ndk.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.trustonic.tee.tui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee.tui@1.0.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.trustonic.tee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.0.so \
     vendor/nothing/Tetris/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
@@ -2577,11 +2581,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacvibrator \
     com.google.android.widevine.nonupdatable \
-    GpuGameDriver.mt6878 \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
     ImsService \
     MtkGbaService \
-    mediatek-common \
-    mediatek-framework \
+    com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
@@ -2611,4 +2615,31 @@ PRODUCT_PACKAGES += \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
     mtk_lbs_service.xml \
-    mtkgnss-batching.xml
+    mtkgnss-batching.xml \
+    vendor.noth.hardware.sensor.sensor_extension-service.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator-V2-service-mediatek_android.hardware.graphics_symlink \
+    libGLES_mali_libGLES_mali_symlink64 \
+    android.hardware.graphics.allocator-V2-mediatek_android.hardware.graphics.allocator-V2-mediatek_symlink64 \
+    android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink64 \
+    mapper.mediatek_mapper.mediatek_symlink64 \
+    vulkan.mali_vulkan.mali_symlink64 \
+    arm.graphics-V4-ndk_arm.graphics-V4-ndk_symlink64 \
+    arm.mali.platform-V2-ndk_arm.mali.platform-V2-ndk_symlink64 \
+    gc02m1_mipi_raw_IdxMgr_gc02m1_mipi_raw_IdxMgr_symlink64 \
+    gc02m1_mipi_raw_tuning_gc02m1_mipi_raw_tuning_symlink64 \
+    gc08a8syx_mipi_raw_IdxMgr_gc08a8syx_mipi_raw_IdxMgr_symlink64 \
+    gc08a8syx_mipi_raw_tuning_gc08a8syx_mipi_raw_tuning_symlink64 \
+    gc08a8xl_mipi_raw_IdxMgr_gc08a8xl_mipi_raw_IdxMgr_symlink64 \
+    gc08a8xl_mipi_raw_tuning_gc08a8xl_mipi_raw_tuning_symlink64 \
+    gc16b3cofilm_mipi_raw_IdxMgr_gc16b3cofilm_mipi_raw_IdxMgr_symlink64 \
+    gc16b3cofilm_mipi_raw_tuning_gc16b3cofilm_mipi_raw_tuning_symlink64 \
+    gc16b3cxl_mipi_raw_IdxMgr_gc16b3cxl_mipi_raw_IdxMgr_symlink64 \
+    gc16b3cxl_mipi_raw_tuning_gc16b3cxl_mipi_raw_tuning_symlink64 \
+    libarm_egl_properties_sysprop_libarm_egl_properties_sysprop_symlink64 \
+    libarm_gralloc_properties_sysprop_libarm_gralloc_properties_sysprop_symlink64 \
+    ov50d40ofilm_mipi_raw_IdxMgr_ov50d40ofilm_mipi_raw_IdxMgr_symlink64 \
+    ov50d40ofilm_mipi_raw_tuning_ov50d40ofilm_mipi_raw_tuning_symlink64 \
+    s5kgn9spofxian_mipi_raw_IdxMgr_s5kgn9spofxian_mipi_raw_IdxMgr_symlink64 \
+    s5kgn9spofxian_mipi_raw_tuning_s5kgn9spofxian_mipi_raw_tuning_symlink64

@@ -68,10 +68,10 @@
     "OperationModeMask": [
       "StreamConfigModeNormalPhoto",
       "StreamConfigModeNormal",
-      "StreamConfigModeBokeh",
       "StreamConfigModeFrontBokeh",
       "StreamConfigModeQCFAMFNR",
-      "StreamConfigModeNormalNight"
+      "StreamConfigModeNormalNight",
+      "StreamConfigModeExpert"
     ],
     "SceneModeMask": [
       "SINGLE_MODE"

@@ -138,6 +138,23 @@
             "Value": "com.nothing.node.frt.so"
           }
         ]
+      },
+      {
+        "NodeName": "MemcpyNv21Node",
+        "NodeInstance": 8,
+        "NodeId": 27,
+        "NodeProperties": [
+          {
+            // NodePropertyCustomLib(1)
+            "Id": 1,
+            "Value": "com.nothing.node.memcpy.so"
+          },
+          {
+            // NodePropertyParallelize(3)
+            "Id": 3,
+            "Value": 1
+          }
+        ]
       }
     ]
   },
@@ -149,8 +166,7 @@
       "StreamConfigModeBokeh"
     ],
     "SceneModeMask": [
-      "BEAUTY_MODE",
-      "NORMAL_MODE",
+      "MMF_MODE"
     ]
   },
   "PortLinks": {
@@ -598,12 +614,29 @@
         }
       },
       {
-        // BeautyNode -> Filter1
+        // FRTNode -> MemcpyNv21Node
         "SrcPort": {
           "PortId": 0,
           "NodeInstance": 0,
           "NodeName": "FRTNode",
           "NodeId": 21,
+          "Format": "YUV420NV21"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": 8,
+          "NodeName": "MemcpyNv21Node",
+          "NodeId": 27,
+          "Format": "YUV420NV21"
+        }
+      },
+      {
+        // MemcpyNv21Node -> Filter1
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": 8,
+          "NodeName": "MemcpyNv21Node",
+          "NodeId": 27,
           "Format": "YUV420NV21"
         },
         "DstPort": {
